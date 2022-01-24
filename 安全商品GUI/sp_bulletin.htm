@@ -1,0 +1,793 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商品安全資訊網</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Slick -->
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <!-- hyUI -->
+    <link rel="stylesheet" href="css/hyui.css">
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按 Enter 到主內容區</a>
+    <!-- wrapper 最大寬度 -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="" tabindex="2">:::</a>
+                <!-- navigation Start -->
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">回首頁</a></li>
+                        <li><a href="#">網站導覽</a></li>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">意見信箱</a></li>
+                        <li><a href="#">常見問答</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </nav>
+                <h1>
+                <a href="index.htm"><img src="images/logo.png" alt="網站標題"/></a>
+            </h1>
+                <!-- Search Start -->
+                <section class="search">
+                    <form action="" class="form_inline">
+                        <div class="form_grp">
+                            <label for="mustSameAsId">帳號:</label><input name="contentword2" id="contentword2" type="text" placeholder="請輸入文字" accesskey="S"><input name="" type="submit" value="查詢" onclick="goClick1(this); return false;">
+                        </div>
+                        <div class="btn_grp">
+                            <input name="" type="submit" value="進階搜尋" onclick="goClick2(this); return false;">
+                        </div>
+                    </form>
+                    <div class="keywordHot">
+                        <ul>
+                            <li><a href="#">熱門熱門</a></li>
+                            <li><a href="#">查詢</a></li>
+                            <li><a href="#">字詞三</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- noscript -->
+                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+                </noscript>
+                <!-- menu Start -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">範例頁面</a>
+                            <ul>
+                                <li><a href="index.htm">首頁</a></li>
+                                <li><a href="lp.htm">一般列表頁</a></li>
+                                <li><a href="lp_table.htm">表格列表頁</a></li>
+                                <li><a href="lp_photo.htm">照片列表頁</a></li>
+                                <li><a href="cp.htm">一般內容頁</a></li>
+                                <li><a href="np.htm">節點頁</a></li>
+                                <li><a href="fp.htm">轉寄友人</a></li>
+                                <li><a href="qp.htm">意見信箱</a></li>
+                                <li><a href="sitemap.htm">網站地圖</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">訊息專區</a>
+                            <ul>
+                                <li><a href="#">最新消息</a>
+                                    <ul>
+                                        <li><a href="#">第三層選單</a></li>
+                                        <li><a href="#">第三層選單</a></li>
+                                        <li><a href="#">第三層選單</a>
+                                            <ul>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">第三層選單</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">商品召回訊息</a></li>
+                                <li><a href="#">國外商品瑕疵訊息</a></li>
+                                <li><a href="#">市售商品抽測結果</a></li>
+                                <li><a href="#">不合格進口產品</a></li>
+                                <li><a href="#">相關連結</a></li>
+                                <li><a href="#">關於我們</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">查詢服務</a>
+                            <ul>
+                                <li><a href="#">瑕疵除濕機查詢</a></li>
+                                <li><a href="#">商品檢驗資訊查詢</a></li>
+                                <li><a href="#">驗證登錄證書查詢</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">線上服務</a>
+                            <ul>
+                                <li><a href="#">商品事故通報</a></li>
+                                <li><a href="#">政府資料開放</a></li>
+                                <li><a href="#">常見問答</a></li>
+                                <li><a href="#">意見信箱</a></li>
+                                <li><a href="#">問卷調查</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">統計彙總</a>
+                            <ul>
+                                <li><a href="#">中國大陸不安全商品</a></li>
+                                <li><a href="#">歷年違規商品/廠商</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">宣導專區</a>
+                            <ul>
+                                <li><a href="#">作業規定</a></li>
+                                <li><a href="#">商品安全知識</a></li>
+                                <li><a href="#">影音宣導</a></li>
+                                <li><a href="#">消費者保護簡訊</a></li>
+                                <li><a href="#">訂閱電子報</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main innerpage">
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <div class="inner_img">
+                <div class="slogan">
+                    <h2>SAFETY FIRST<small>安全生活 幸福享受</small></h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="submenu">
+                    <h2>線上服務</h2>
+                    <ul>
+                        <li><a href="#">商品事故通報</a></li>
+                        <li><a href="#">政府資料開放</a></li>
+                        <li><a href="#">常見問答</a></li>
+                        <li><a href="#">意見信箱</a></li>
+                        <li><a href="#">問卷調查</a></li>
+                    </ul>
+                    <h2>熱門搜尋關鍵字</h2>
+                    <div class="tagcloud">
+                        <ul>
+                            <li><a href="#">商品檢驗</a></li>
+                            <li><a href="#">塑膠玩具</a></li>
+                            <li><a href="#">行動電源</a></li>
+                            <li><a href="#">泡泡水</a></li>
+                            <li><a href="#">除濕機</a></li>
+                            <li><a href="#">嬰兒床圍</a></li>
+                            <li><a href="#">床邊護欄</a></li>
+                            <li><a href="#">塑化劑</a></li>
+                            <li><a href="#">行動電源</a></li>
+                            <li><a href="#">泡泡水</a></li>
+                            <li><a href="#">除濕機</a></li>
+                            <li><a href="#">嬰兒床圍</a></li>
+                            <li><a href="#">床邊護欄</a></li>
+                            <li><a href="#">塑化劑</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content">
+                    <!-- breadcrumb路徑 -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">首頁</a></li>
+                            <li><a href="#">節點</a></li>
+                            <li>節點</li>
+                        </ul>
+                    </div>
+                    <!-- h2節點 -->
+                    <h2>節點標題</h2>
+                    <!-- function功能區塊 -->
+                    <div class="function">
+                        <ul>
+                            <li class="back"><a href="#">回上一頁</a></li>
+                            <li class="print"><a href="#">友善列印</a></li>
+                            <li class="forward"><a href="#">轉寄友人</a></li>
+                        </ul>
+                    </div>
+                    <!-- FP Start -->
+                    <section class="sp">
+                        <div class="notice">
+                            <ol>
+                                <li>通報範圍：屬經濟部公告應施檢驗商品有下列情事之一者，報驗義務人應辦理通報： <ul>
+                                        <li>(一)有發生燃燒、爆裂或燒熔，致損害消費者生命、身體、健康或財產，或確有損害之虞。</li>
+                                        <li>(二)因使用商品造成人員死亡或須住院治療之傷害。</li>
+                                    </ul>
+                                </li>
+                                <li>通報方法： <ul>
+                                        <li>(一)線上通報(建議採取之方式)</li>
+                                        <li> (二)電子郵件：<a href="mailto:b051p@bsmi.gov.tw">b051p@bsmi.gov.tw</a></li>
+                                    </ul>
+                                </li>
+                                <li> 未加註<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr>號項目，屬於次要資料，應於15日內補正，無法補正須來文檢附證明文件敘明無法提供資料 </li>
+                                <li><abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr>號項目，屬於必填欄位，需全部填寫完畢，才可儲存通報資料(如未填寫完全，則為反白)。</li>
+                            </ol>
+                        </div>
+                        <form action="">
+                            <div class="form_grp form_inline who">
+                                <label for="selectSample">我是</label>
+                                <select name="" id="selectSample">
+                                    <option value="">業者</option>
+                                    <option value="">消費者</option>
+                                    <option value="">其他</option>
+                                </select>
+                            </div>
+                            <h3 class="step_title">步驟一、通報之商品：</h3>
+                            <div class="step form_grid">
+                                <div class="form_grp">
+                                    <label for="" class="form_title">名稱<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <fieldset>
+                                        <legend class="form_title">商品類別<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></legend>
+                                        <div class="form_content">
+                                            <div class="check_grp form_inline">
+                                                <label>
+                                                    <input type="radio" name="" value="" checked>家用電器</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">瓦斯器具</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">照明燈具</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">視聽音響</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">資訊產品</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">陶瓷用品</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">配電器材(插座、插頭、延長線等)</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">玩具</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">汽車相關零組件(僅限輪胎、安全帶、18吋以下輪圈)</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">嬰兒用品(手推嬰兒車、嬰兒學步車等)</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">運動用品(溜冰鞋、直排輪、滑溜版)</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">頭盔(機車用頭盔、運動用頭盔或其他用途頭盔)</label>
+                                                <label>
+                                                    <input type="radio" name="" value="">其他屬經濟部主管消費商品</label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">廠牌<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">型號<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">序號</label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">委託產製廠商 (代工產製廠商)</label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">商品檢驗標識號碼</label>
+                                    <div class="form_content">
+                                        <div class="form_inline">
+                                            <input type="text" id="" value="">
+                                            <a href="#" class="btn btn-orange">商品檢驗標識</a></div>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">產地</label>
+                                    <div class="form_content">
+                                        <div class="radio_grp form_inline">
+                                            <label>
+                                                <input type="radio" name="sampleRadio5" value="" checked>台灣</label>
+                                            <label>
+                                                <input type="radio" name="sampleRadio5" value="">美國</label>
+                                            <label>
+                                                <input type="radio" name="sampleRadio5" value="">日本</label>
+                                            <label>
+                                                <input type="radio" name="sampleRadio5" value="">中國大陸</label>
+                                            <div class="form_inline">
+                                                <label>
+                                                    <input type="radio" name="sampleRadio5" value="">其他：<input type="text" id="" value=""></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">製造數量</label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">銷售數量</label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">商品製造或進口日期 (或期間)<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                    <div class="form_content">
+                                        <div class="radio_grp form_inline">
+                                            <div class="form_inline">
+                                                <label>
+                                                    <input type="radio" name="sampleRadio4" value="" checked>
+                                                    <input type="text" id="" value="" placeholder="開始日期"> ~ <input type="text" id="" value="" placeholder="結束日期">
+                                                </label>
+                                            </div>
+                                            <label>
+                                                <input type="radio" name="sampleRadio4" value="">不明 </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">銷售(代理)起迄時間<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                    <div class="form_content">
+                                        <div class="radio_grp form_inline">
+                                            <div class="form_inline">
+                                                <label>
+                                                    <input type="radio" name="sampleRadio6" value="" checked>
+                                                    <input type="text" id="" value="" placeholder="開始日期"> ~ <input type="text" id="" value="" placeholder="結束日期">
+                                                </label>
+                                            </div>
+                                            <label>
+                                                <input type="radio" name="sampleRadio6" value="">不明 </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">銷售地區</label>
+                                    <div class="form_content">
+                                        <div class="radio_grp form_inline"> 國內： <label>
+                                                <input type="checkbox" name="samplecheck1" value="" checked>全區</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck1" value="">北區</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck1" value="">中區</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck1" value="">南區</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck1" value="">東區</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck1" value="">離島</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck1" value="">國外</label>
+                                            <div class="form_inline">
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck1" value="">國外：<input type="text" id="" value=""></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">銷售通路</label>
+                                    <div class="form_content">
+                                        <div class="radio_grp form_inline"> 國內： <label>
+                                                <input type="checkbox" name="samplecheck1" value="" checked>零售商</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck1" value="">大賣場</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck1" value="">其他</label>
+                                            <div class="form_inline">
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck1" value="">國外：<input type="text" id="" value=""></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">零售價格</label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">事故情形說明 與初步研判：<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">獲知事故時間<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                    <div class="form_content">
+                                        <input type="text" id="" value="">
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">獲知事故方式</label>
+                                    <div class="form_content">
+                                        <div class="radio_grp form_inline">
+                                            <label>
+                                                <input type="checkbox" name="samplecheck2" value="" checked>消費者抱怨</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck2" value="">經銷商(賣場)通路</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck2" value="">媒體</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck2" value="">消保團體</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck2" value="">政府機關</label>
+                                            <div class="form_inline">
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck2" value="">其他: <input type="text" id="" value="" placeholder="請說明"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">已知消費者受害狀況</label>
+                                    <div class="form_content">
+                                        <div class="check_grp form_inline">
+                                            <div class="form_title">
+                                                <abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr>財產損失： </div> <label><input name="" type="checkbox" value="">商品本身</label>
+                                            <label><input name="" type="checkbox" value="">房屋受損</label>
+                                            <label><input name="" type="checkbox" value="">無損失</label>
+                                            <div class="form_inline">
+                                                <label><input name="" type="checkbox" value="">其他：</label>
+                                                <input type="text" id="" value="" placeholder="請說明">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="check_grp form_inline">
+                                            <div class="form_title">
+                                                <abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr>身體受傷： </div><label><input name="" type="checkbox" value="">摔傷</label>
+                                            <label><input name="" type="checkbox" value="">燙傷</label>
+                                            <label><input name="" type="checkbox" value="">割裂傷</label>
+                                            <label><input name="" type="checkbox" value="">無受傷</label>
+                                            <div class="form_inline">
+                                                <label><input name="" type="checkbox" value="">其他：</label>
+                                                <input type="text" id="" value="" placeholder="請說明">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form_inline">
+                                            <div class="form_title">
+                                                <label for="selectSample"><abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr>性別</label>
+                                            </div>
+                                            <div class="radio_grp form_inline">
+                                                <label><input name="radioSample" type="radio" value="">男</label>
+                                                <label><input name="radioSample" type="radio" value="">女</label>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form_inline">
+                                            <div class="form_title">
+                                                <label for="selectSample"><abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr>地址</label>
+                                            </div>
+                                            <div class="form_inline">
+                                                <label for="selectSample">縣市</label>
+                                                <select name="" id="selectSample">
+                                                    <option value="">台北市</option>
+                                                    <option value="">新北市</option>
+                                                    <option value="">桃園市</option>
+                                                    <option value="">新竹縣</option>
+                                                </select>
+                                                <label for="selectSample">鄉鎮</label>
+                                                <select name="" id="selectSample">
+                                                    <option value="">XXXX</option>
+                                                    <option value="">XXXX</option>
+                                                    <option value="">XXXX</option>
+                                                    <option value="">XXXX</option>
+                                                </select>
+                                                <input type="text" id="" value="">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form_inline">
+                                            <div class="form_title">
+                                                <label> E-mail: </label>
+                                            </div>
+                                            <div class="form_inline">
+                                                <input type="text" id="" value="">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="form_inline">
+                                            <div class="form_title"></div>
+                                            <div class="radio_grp form_inline">
+                                                <label><input name="radioSample" type="radio" value="">單筆輸入</label>
+                                                <label><input name="radioSample" type="radio" value="">多筆輸入</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form_grp">
+                                    <label for="" class="form_title">危害形式<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                    <div class="form_content">
+                                        <div class="radio_grp form_inline">
+                                            <label>
+                                                <input type="checkbox" name="samplecheck2" value="" checked>觸電</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck2" value="">火災</label>
+                                            <label>
+                                                <input type="checkbox" name="samplecheck2" value="">爆炸</label>
+                                            <div class="form_inline">
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck2" value="">其他: <input type="text" id="" value="" placeholder="請說明"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="step_title">步驟二、擬訂採取矯正措施：</h3>
+                                <div class="step">
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">矯正措施</label>
+                                        <div class="form_content">
+                                            <div class="radio_grp form_inline">
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck2" value="" checked>下架回收</label>
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck2" value="">召回/回收檢修</label>
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck2" value="">置換</label>
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck2" value="">加貼警告標示</label>
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck2" value="">研擬中</label>
+                                                <div class="form_inline">
+                                                    <label>
+                                                        <input type="checkbox" name="samplecheck2" value="">其他: <input type="text" id="" value="" placeholder="請說明"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="step_title">步驟三、擬訂相關資訊公布方式：</h3>
+                                <div class="step">
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">公布方式</label>
+                                        <div class="form_content">
+                                            <div class="radio_grp form_inline">
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck3" value="" checked>媒體</label>
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck3" value="">網站</label>
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck3" value="">張貼佈告</label>
+                                                <label>
+                                                    <input type="checkbox" name="samplecheck3" value="">研擬中</label>
+                                                <div class="form_inline">
+                                                    <label>
+                                                        <input type="checkbox" name="samplecheck3" value="">其他: <input type="text" id="" value="" placeholder="請說明"></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="step_title">步驟四、是否須於本局網站協助公告相關資訊：</h3>
+                                <div class="step">
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">是否公告</label>
+                                        <div class="form_content">
+                                            <div class="radio_grp form_inline">
+                                                <label><input name="radioSample0" type="radio" value="" checked>是</label>
+                                                <label><input name="radioSample0" type="radio" value="">否</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="step_title">步驟五、擬訂公告內容(可含相關附件或照(圖)片)：</h3>
+                                <div class="step">
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">上傳檔案</label>
+                                        <div class="form_content">
+                                            <div class="upload_grp">
+                                                <input class="upload_file" type="text" readonly>
+                                                <div class="upload_btn">
+                                                    <span>上傳檔案</span>
+                                                    <input type="file" class="check_file" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="step_title">步驟六、通報者資料：</h3>
+                                <div class="step">
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">公司名稱<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                        <div class="form_content">
+                                            <input type="text" id="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">公司<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                        <div class="form_content">
+                                            <input type="text" id="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">希受訪地址<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                        <div class="form_content">
+                                            <div class="radio_grp form_inline">
+                                                <label>
+                                                    <input type="radio" name="sampleRadio8" value="" checked>同公司地址</label>
+                                                <div class="form_inline">
+                                                    <label>
+                                                        <input type="radio" name="sampleRadio8" value="">不同公司地址：<input type="text" id="" value=""></label>
+                                                </div>
+                                            </div>
+                                            <p style="color:red;">*若希受訪地址不同於公司地址，請點選「不同公司地址」並輸入受訪地址。</p>
+                                        </div>
+                                    </div>
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">屬性<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                        <div class="form_content">
+                                            <div class="radio_grp form_inline">
+                                                <label>
+                                                    <input type="radio" name="sampleRadio10" value="" checked> 製造商</label>
+                                                <label>
+                                                    <input type="radio" name="sampleRadio10" value="" checked> 代理商</label>
+                                                <div class="form_inline">
+                                                    <label>
+                                                        <input type="radio" name="sampleRadio10" value=""> 其他：<input type="text" id="" value=""></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">單位/姓名<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                        <div class="form_content">
+                                            <input type="text" id="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">職稱<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                        <div class="form_content">
+                                            <input type="text" id="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">聯絡電話或手機<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                        <div class="form_content">
+                                            <input type="text" id="" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form_grp">
+                                        <label for="" class="form_title">E-mail<abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr></label>
+                                        <div class="form_content">
+                                            <input type="text" id="" value="">
+                                            <p style="color:red;">「請填寫可以聯絡到通報人的電子郵件帳號，而非公司的公用電子郵件帳號。」</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3 class="step_title">步驟七、驗證碼：</h3>
+                                <div class="step">
+                                    <div class="form_grp">
+                                        <label class="form_title"><abbr class=necessary title=“為必填(選)欄位,不能為空白。“>*</abbr>驗證碼</label>
+                                        <div class="form_content">
+                                            <img src="images/basic/captcha.gif" alt="" class="captcha">
+                                            <input type="text" id="" value="">
+                                            <a href="#" class="btn btn-sm"><img src="images/icon_reload.png" alt="重新取得驗證碼"></a>
+                                            <div class="notice_error">您輸入的驗證碼錯誤 </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </form>
+                        <div class="btn_grp">
+                            <input name="" type="reset" value="清除">
+                            <input name="" type="submit" value="送出">
+                            <p style="color:red;">(如通報成功，會出現一組通報編號，請妥善保管。)</p>
+                        </div>
+                </div>
+                </section>
+                <!-- FP End -->
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <a class="accesskey" href="#aF" id="aF" accesskey="F" title="頁尾區">:::</a>
+            <!-- fatfooter Start -->
+            <section class="fatfooter">
+                <div class="container">
+                    <button type="button" name="收合" class="btn btn-fatfooter">收合</button>
+                    <nav>
+                        <ul>
+                            <li><a href="#">訊息專區</a>
+                                <ul>
+                                    <li><a href="#">最新消息</a></li>
+                                    <li><a href="#">商品召回訊息</a></li>
+                                    <li><a href="#">國外商品瑕疵訊息</a></li>
+                                    <li><a href="#">市售商品抽測結果</a></li>
+                                    <li><a href="#">不合格進口產品</a></li>
+                                    <li><a href="#">相關連結</a></li>
+                                    <li><a href="#">關於我們</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">查詢服務</a>
+                                <ul>
+                                    <li><a href="#">瑕疵除濕機查詢</a></li>
+                                    <li><a href="#">商品檢驗資訊查詢</a></li>
+                                    <li><a href="#">驗證登錄證書查詢</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">線上服務</a>
+                                <ul>
+                                    <li><a href="#">商品事故通報</a></li>
+                                    <li><a href="#">政府資料開放</a></li>
+                                    <li><a href="#">常見問答</a></li>
+                                    <li><a href="#">意見信箱</a></li>
+                                    <li><a href="#">問卷調查</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">統計彙總</a>
+                                <ul>
+                                    <li><a href="#">中國大陸不安全商品</a></li>
+                                    <li><a href="#">歷年違規商品/廠商</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">宣導專區</a>
+                                <ul>
+                                    <li><a href="#">作業規定</a></li>
+                                    <li><a href="#">商品安全知識</a></li>
+                                    <li><a href="#">影音宣導</a></li>
+                                    <li><a href="#">消費者保護簡訊</a></li>
+                                    <li><a href="#">訂閱電子報</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <div class="footer_logo">
+                <img src="images/footer_logo.png" alt="" class="img-responsive">
+                </div>
+                <div class="footer_info">
+                    <ul class="footer_link">
+                        <li><a href="#">聯絡電話</a></li>
+                        <li><a href="#">隱私權政策</a></li>
+                        <li><a href="#">資訊安全政策</a></li>
+                        <li><a href="#">交通資訊</a></li>
+                    </ul>
+                    <p> 聯絡地址：100 臺北市濟南路一段四號 <br> 傳真：02-23932324 <br> 本網站支援IE與Firefox,最佳瀏覽解析度建議使用1024x768 <br>
+                    </p>
+                    <span class="update">更新日期:<em>2018/01/01</em></span>
+                    <span class="counter">累計瀏覽人次:<em>46476653</em></span>
+                </div>
+                <div class="footer_icon">
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                                <img src="images/basic/accessibility.jpg" alt="">
+                            </a>
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                                <img src="images/basic/egov.png" alt="">
+                            </a>
+                </div>
+            </div>
+    </footer>
+    </div>
+    <a href="javascript:;" class="scrollToTop" title="回頁首">回頁首</a>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- slick -->
+    <script src="vendor/slick/slick.min.js"></script>
+    <script src="js/hyui.js"></script>
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

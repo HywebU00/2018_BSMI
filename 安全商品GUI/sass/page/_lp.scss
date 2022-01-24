@@ -1,0 +1,255 @@
+.lp {
+    table {
+        td {
+            text-align: left;
+            &.date {
+                text-align: center;
+                color: #666;
+                @include screen('mobile') {
+                    text-align: left;
+                }
+            }
+            &.num {
+                text-align: center;
+                color: #666;
+                @include screen('mobile') {
+                    text-align: left;
+                }
+            }
+        }
+    }
+    .list {
+        text-align: left;
+        ul,
+        ol {
+            list-style-type: none;
+            padding: 0;
+            border-top: 2px solid $primaryColor;
+            li {
+                padding: 1em 0;
+                border-bottom: 1px solid #DDD;
+                position: relative; // outline: 1px solid blue;
+                a {
+                    display: block;
+                    padding-left: 2em;
+                    position: relative;
+                    line-height: 1.45em;
+                    .num {
+                        width: 1.5em;
+                        text-align: right;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        &:after {
+                            content: ".";
+                            display: inline-block;
+                        }
+                    }
+                }
+                span.dept {
+                    display: inline-block;
+                    font-size: .938em;
+                    @include screen("mobile") {
+                        display: block;
+                    }
+                }
+                time {
+                    display: block;
+                    color: #AAA;
+                    font-size: .938em;
+                }
+            }
+        }
+    }
+    .album {
+        margin: 1em auto;
+        overflow: hidden;
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            li {
+                @include make-xs-column(12);
+                @include make-sm-column(4);
+                @include make-md-column(4);
+                @include make-lg-column(4);
+                @include gutter();
+                margin-bottom: 25px;
+                a {
+                    display: block;
+                    text-align: center;
+                }
+                .imgOuter {
+                    width: 100%;
+                    @include aspect-ratio(4, 3);
+                }
+                .caption {
+                    h3 {
+                        height: 3em;
+                        display: block;
+                        margin: 0;
+                        line-height: 1.5em;
+                        overflow: hidden;
+                        text-align: left;
+                        padding: .5em;
+                        background: #efefef;
+                    }
+                }
+                &:hover, &:focus {
+                    h3 {
+                        background: $secondaryColor;
+                        color: #FFF;
+                    }
+                }
+            }
+        }
+    }
+}
+.tagcloud {
+    ul {
+        margin: 0;
+        list-style: none;
+        padding: .5em;
+        background: #fbfbfb;
+        li {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
+            border-bottom: none !important;
+            a {
+                // padding:.2em !important;
+                &:before {
+                    display: none;
+                }
+            }
+            &:nth-child(2n+1) {
+                a {
+                    color: $color-red;
+                    font-size: 1.125em;
+                }
+            }
+            &:nth-child(3n+1) {
+                a {
+                    color: $color-green;
+                    font-size: .75em;
+                }
+            }
+            &:nth-child(4n+1) {
+                a {
+                    color: $color-blue;
+                }
+            }
+            &:nth-child(5n+1) {
+                a {
+                    color: $color-purple;
+                    font-size: .938em;
+                }
+            }
+        }
+    }
+}
+.function {
+    ul {
+        float: right;
+        display: block;
+    }
+    ul.fontsize {
+        float: right;
+        @include screen('mobile') {
+            display: none;
+        }
+        &:before {
+            content: "字型大小：";
+            font-size: .938em;
+            display: inline-block;
+            margin: 0px 4px;
+            color: #666;
+            float: left;
+        }
+        padding: 0;
+        margin: 0 20px;
+        list-style: none;
+        li {
+            display: inline-block;
+            text-align: center;
+            color: #FFF;
+            a {
+                background: #666;
+                &:hover,
+                &:focus {
+                    background: $secondaryColor;
+                }
+                &.active {
+                    background: $primaryColor;
+                }
+            }
+        }
+    }
+}
+.main {
+    &.smallFont {
+        font-size: .938em;
+    }
+    &.largeFont {
+        font-size: 1.125em;
+    }
+}
+.advance_search {
+    @include clearfix;
+    @include make-xs-column(12);
+    @include make-sm-column(12);
+    @include make-md-column(12);
+    @include make-lg-column(12);
+    margin: 0 0 .5em;
+    text-align: right;
+    margin-bottom: 1em;
+    i {
+        margin-right: .4em;
+    }
+    button {
+        float: right;
+        font-size: .813em;
+        border: none;
+        display: block;
+        padding: .2em 1em .4em;
+        margin: .5em 0;
+        background: $secondaryColor;
+        border-color: $secondaryColor;
+        color: #FFF;
+        @include border-radius(4px);
+        &:hover,
+        &:focus {
+            background: lighten($secondaryColor, 10);
+            border-color: lighten($secondaryColor, 10);
+        }
+        @include screen('mobile') {
+            width: 100%;
+            float: none;
+            font-size: .938em;
+            margin: .4em 0;
+            padding: .5em 1em;
+            @include box-sizing;
+        }
+    }
+}
+.advance_block {
+    @include make-xs-column(12);
+    @include make-sm-column(12);
+    @include make-md-column(12);
+    @include make-lg-column(12);
+    @include border-radius(6px);
+    border: 3px solid #DDD;
+    background: #FFF;
+    display: none;
+    margin-bottom: .5em;
+    margin-top: .5em;
+    display: block;
+    @include clearfix;
+    .form_grid .form_grp {
+        padding: .2em 0;
+    }
+    .btn_grp {
+        padding: .2em 0;
+        text-align: center;
+    }
+}

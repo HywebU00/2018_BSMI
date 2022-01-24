@@ -1,0 +1,11 @@
+.fp{
+	margin: 1em auto;
+	@include box-sizing;
+	padding:1em;
+	  background: url(../images/fp_bg.jpg) no-repeat right bottom;
+    padding-bottom: 300px;
+    @include screen('mobile') {
+        background: url(../images/fp_bg.jpg) no-repeat right bottom;
+        background-size: contain;
+    }
+}

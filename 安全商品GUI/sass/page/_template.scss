@@ -1,0 +1,305 @@
+body {
+    background: #E9E9E9;
+    overflow-x: hidden;
+    font-family: Lato, "PingFang TC", "Helvetica Neue", Helvetica, 微軟正黑體, 新細明體, Arial, sans-serif;
+    &.noscroll {
+        // position: fixed!important;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden !important;
+    }
+}
+// 最外圍預設為100%
+.wrapper {
+    max-width: 100%;
+    margin: 0px auto;
+    position: relative;
+    background: #FFF;
+    @include screen('mobile') {
+        background: #FFF;
+    }
+}
+// 整體共用container樣式，請注意首頁切版頁面的整齊
+.container {
+    padding: 0;
+    margin: 0 auto;
+    max-width: $container-max; //請看_variable.scss
+    @include gutter(5%);
+    @include screen('mobile') {
+        @include gutter();
+    }
+}
+.main {
+    position: relative;
+    margin: 0 auto;
+    padding: 0; // max-width: $container-max; 
+    // 可先設定一個中央區塊最大寬，限制accesskey對齊
+    @include screen('mobile') {
+        padding-top: 55px;
+    }
+    // 內頁標題設定
+    h2 {
+        line-height: 1.25em;
+    }
+}
+// 首頁區塊設定
+.section {
+    padding: 0em 0 2em;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    &+.section {
+        padding-top: 2em;
+    }
+}
+////////////////////////////////////////////////////////////
+// 為了與首頁區隔，請在內頁加上innerpage ClassName
+.inner_img {
+    width: 100%;
+    height: 150px;
+    background: url(../images/inner_img_bg.jpg) repeat-x center center;
+    margin-bottom: 1em;
+    @include box-sizing;
+    .slogan {
+        max-width: $container-max;
+        height: 150px;
+        padding: 0px 30% 0px 0%;
+        display: block;
+        margin: 0 auto;
+        background: url(../images/inner_img.jpg) no-repeat center center;
+        @include box-sizing;
+        @include gutter(7%);
+        h2 {
+            margin: 0;
+            text-align: left;
+            color: #FFF;
+            font-size: 2.5em;
+            line-height: 1.35em;
+            padding: 10px 0;
+            margin-top: 0;
+            margin-bottom: 0;
+            text-shadow: 1px 1px 5px RGBA(0, 0, 0, .8);
+            small {
+                display: block;
+                font-size: .75em;
+                margin: 0;
+            }
+            @include screen('mobile') {
+                font-size: 2em;
+                small {
+                    font-size: .75em;
+                }
+            }
+        }
+    }
+}
+.innerpage {
+    padding-top: 0em;
+    section,
+    .section {
+        text-align: left;
+    }
+    @include screen('mobile') {
+        padding-top: 3.5em;
+    }
+    >.container {
+        @include gutter(7%); //gutter 代表左右要留白
+        background: #FFF;
+        h2 {
+            background: url('../images/h2_bg.png') no-repeat left top;
+            padding-left: 40px;
+            line-height: 1.45em;
+            padding-bottom: 10px;
+            margin: .5em 0 0;
+        }
+    }
+    .content {
+        @include gutter();
+    }
+    .submenu {
+        @include make-xs-column(12);
+        @include make-sm-column(3);
+        @include make-md-column(3);
+        @include make-lg-column(3);
+        &~.content {
+            @include make-xs-column(12);
+            @include make-sm-column(12);
+            @include make-md-column(9);
+            @include make-lg-column(9);
+        }
+        @include screen('tablet') {
+            display: none;
+        }
+        h2 {
+            color: #2ecdd7;
+            background: none;
+            padding-left: 0px;
+            padding-bottom: 0px;
+            margin-bottom: 0;
+        }
+        ul {
+            margin: 0;
+            list-style: none;
+            padding: .5em;
+            background: #FAFAFA;
+            li {
+                a {
+                    padding: .5em .5em .5em .8em;
+                    display: block;
+                    position: relative;
+                    &:hover,
+                    &:focus {
+                        color: $primaryColor;
+                    }
+                    &:before {
+                        content: "";
+                        position: absolute;
+                        width: 0;
+                        height: 0;
+                        left: 0;
+                        top: 18px;
+                        border-style: solid;
+                        border-width: 2.5px 0 2.5px 5px;
+                        border-color: transparent transparent transparent #666;
+                    }
+                }
+                border-bottom: 1px dashed #CCC;
+            }
+        }
+    }
+    .content {
+        @include make-xs-column(12);
+        @include make-sm-column(12);
+        @include make-md-column(12);
+        @include make-lg-column(12);
+        @include gutter();
+        min-height: 550px;
+        padding-bottom: 100px;
+    }
+}
+.error {
+    width: 90%;
+    padding: 1em 420px 1em 2em;
+    min-height: 400px;
+    position: relative;
+    background: url(../images/error.png) no-repeat right bottom #F1F1F1;
+    margin: 2em auto 1em;
+    @include border-radius(6px);
+    @include box-sizing;
+    h3 {
+        font-size: 1.25em;
+        line-height: 1.65em;
+        margin-bottom: 2em;
+        color: $aHover;
+        small {
+            display: block;
+            color: #666;
+            line-height: 1.45em;
+        }
+    }
+    @include screen('mobile') {
+        text-align: center;
+        padding: 1em 1em 350px;
+        background: url(../images/error.png) no-repeat center bottom #F1F1F1;
+    }
+    h1 {
+        color: $secondaryColor;
+        line-height: 1.45em;
+        font-size: 2em;
+        margin-bottom: 1em;
+        br {
+            display: none;
+            @include screen('mobile') {
+                display: block;
+            }
+        }
+    }
+}
+.who {
+    background: #EEE;
+    padding: .5em 1em .2em;
+    border-radius: 6px;
+    margin: .5em 0;
+    text-align: center;
+}
+.notice~form {
+    margin-top: 1em;
+}
+h3.step_title{
+    background:#777;
+    color:#FFF;
+    padding:1em;
+    margin: 0;
+}
+.step {
+    &>.form_grp {
+        border-bottom: 1px dashed #EEE;
+        position: relative;
+        &:hover {
+            &:before {
+                content: "";
+                position: absolute;
+                top: 10%;
+                height: 80%;
+                border-left: 3px solid $primaryColor;
+            }
+            ;
+        }
+    }
+    padding:1em;
+    box-sizing:border-box;
+    border-top: 3px solid #CCC;
+    @include clearfix;
+    margin-bottom: .5em;
+    .check_grp {
+        label {
+            // display:block;
+        }
+    }
+    .form_title {
+        color: #222;
+        font-weight: bold;
+    }
+    .form_inline {
+        input, label {
+            display: inline-block;
+        }
+        select{
+            width:auto;
+            display:inline-block;
+        }
+        input[type="text"] {
+            width: auto;
+        }
+        .btn {
+            margin-top: 0;
+        }
+    }
+    a.btn{
+         margin-top: 0;
+         padding:.3em 1em !important; 
+         width:auto !important;
+         min-width:0px !important;
+        img{
+                max-width:20px;
+            }
+    }
+    .form_grp{
+        padding-left: .5em;
+    }
+    .form_content{
+        .form_title{
+            min-width: 140px;
+            min-height: 60px;
+            @include screen('mobile') {
+                margin-left: 0;
+                padding-left: 0;
+                min-height:10px;
+            }
+        }
+    }
+}
+.btn_grp{
+    text-align: center !important;
+}

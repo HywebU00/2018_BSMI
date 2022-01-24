@@ -1,0 +1,72 @@
+.cp {
+    img {
+        &.float_left {
+            float: left;
+            margin: 0px 1em 1em 0;
+            max-width: 55%;
+
+            @include screen('mobile') {
+        float: none;
+                margin: 0px auto 1em;
+                max-width: 100%;
+            }
+        }
+        &.float_right {
+            float: right;
+            margin: 0px 0 1em 1em;
+            max-width: 55%;
+
+            @include screen('mobile') {
+                float: none;
+                margin: 0px auto 1em;
+                max-width: 100%;
+            }
+        }
+
+    }
+
+    a {
+        color: darken($aHover,10);
+        &:hover{
+            color: darken($aHover,5);
+        }
+    }
+
+    .info {
+        font-size: 0.938em;
+        line-height: 1.5em;
+        list-style: none;
+        margin: .5em 0;
+        padding: .5em 1.5em .5em;
+        border-left: solid 5px $primaryColor;
+        background: #F2F2F2;
+
+        @include screen('mobile') {
+            padding: .1em 1em;
+        }
+
+        ul {
+            @include li-reset;
+        }
+
+        li {
+            width: 30%;
+            margin: .5em 0;
+            display: inline-block;
+            vertical-align: top;
+
+            @include screen('tablet') {
+                width: 48%;
+                margin-bottom: .2em;
+                font-size: 0.875em;
+            }
+
+            @include screen('mobile') {
+                width: 100%;
+                display: block;
+                margin-bottom: 0em;
+                margin-top: .2em;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.qp {
+    margin: 0em auto 1em;
+    @include box-sizing;
+    padding: 1em;
+    background: url(../images/qp_bg.jpg) no-repeat right bottom;
+    padding-bottom: 300px;
+    @include screen('mobile') {
+        background: url(../images/qp_bg.jpg) no-repeat right bottom;
+        background-size: contain;
+    }
+}

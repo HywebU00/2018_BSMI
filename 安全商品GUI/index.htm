@@ -1,0 +1,549 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>商品安全資訊網</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <!-- Slick -->
+    <link rel="stylesheet" href="vendor/slick/slick.css">
+    <link rel="stylesheet" href="vendor/slick/slick-theme.css">
+    <!-- hyUI -->
+    <link rel="stylesheet" href="css/hyui.css">
+</head>
+
+<body>
+    <!-- 直接跳主內容區 -->
+    <a class="goCenter" href="#center" tabindex="1">按 Enter 到主內容區</a>
+    <!-- wrapper 最大寬度 -->
+    <div class="wrapper">
+        <!-- header Start -->
+        <header class="header">
+            <div class="container">
+                <a class="accesskey" href="#aU" id="aU" accesskey="U" title="" tabindex="2">:::</a>
+                <!-- navigation Start -->
+                <nav class="navigation">
+                    <ul>
+                        <li><a href="#">回首頁</a></li>
+                        <li><a href="#">網站導覽</a></li>
+                        <li><a href="#">關於我們</a></li>
+                        <li><a href="#">意見信箱</a></li>
+                        <li><a href="#">常見問答</a></li>
+                        <li><a href="#">English</a></li>
+                    </ul>
+                </nav>
+                <h1>
+                    <a href="#"><img src="images/logo.png" alt="網站標題"/></a>
+                </h1>
+                <!-- Search Start -->
+                <section class="search">
+                    <form action="" class="form_inline">
+                        <div class="form_grp">
+                            <label for="mustSameAsId">帳號:</label><input name="contentword2" id="contentword2" type="text" placeholder="請輸入文字" accesskey="S"><input name="" type="submit" value="查詢" onclick="goClick1(this); return false;">
+                        </div>
+                        <div class="btn_grp">
+                            <input name="" type="submit" value="進階搜尋" onclick="goClick2(this); return false;">
+                        </div>
+                    </form>
+                    <div class="keywordHot">
+                        <ul>
+                            <li><a href="#">熱門熱門</a></li>
+                            <li><a href="#">查詢</a></li>
+                            <li><a href="#">字詞三</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <!-- noscript -->
+                <noscript> 您的瀏覽器不支援JavaScript語法，JavaScript語法並不影響內容的陳述。您可使用按鍵盤上的Ctrl鍵+ (+)鍵放大/(-)鍵縮小來改變字型大小；回到上一頁可使用瀏覽器提供的 Alt+左方向鍵(←) 快速鍵功能；列印可使用瀏覽器提供的(Ctrl+P)功能。您的瀏覽器，不支援script語法，若您的瀏覽器無法支援請點選此超連結 <a href="#">網站導覽</a>
+                </noscript>
+                <!-- menu Start -->
+                <nav class="menu">
+                    <ul>
+                        <li><a href="#">範例頁面</a>
+                            <ul>
+                                <li><a href="index.htm">首頁</a></li>
+                                <li><a href="lp.htm">一般列表頁</a></li>
+                                <li><a href="lp_table.htm">表格列表頁</a></li>
+                                <li><a href="lp_photo.htm">照片列表頁</a></li>
+                                <li><a href="cp.htm">一般內容頁</a></li>
+                                <li><a href="np.htm">節點頁</a></li>
+                                <li><a href="fp.htm">轉寄友人</a></li>
+                                <li><a href="qp.htm">意見信箱</a></li>
+                                <li><a href="sitemap.htm">網站地圖</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">訊息專區</a>
+                            <ul>
+                                <li><a href="#">最新消息</a>
+                                    <ul>
+                                        <li><a href="#">第三層選單</a></li>
+                                        <li><a href="#">第三層選單</a></li>
+                                        <li><a href="#">第三層選單</a>
+                                            <ul>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                                <li><a href="#">第四層選單</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">第三層選單</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">商品召回訊息</a></li>
+                                <li><a href="#">國外商品瑕疵訊息</a></li>
+                                <li><a href="#">市售商品抽測結果</a></li>
+                                <li><a href="#">不合格進口產品</a></li>
+                                <li><a href="#">相關連結</a></li>
+                                <li><a href="#">關於我們</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">查詢服務</a>
+                            <ul>
+                                <li><a href="#">瑕疵除濕機查詢</a></li>
+                                <li><a href="#">商品檢驗資訊查詢</a></li>
+                                <li><a href="#">驗證登錄證書查詢</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">線上服務</a>
+                            <ul>
+                                <li><a href="#">商品事故通報</a></li>
+                                <li><a href="#">政府資料開放</a></li>
+                                <li><a href="#">常見問答</a></li>
+                                <li><a href="#">意見信箱</a></li>
+                                <li><a href="#">問卷調查</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">統計彙總</a>
+                            <ul>
+                                <li><a href="#">中國大陸不安全商品</a></li>
+                                <li><a href="#">歷年違規商品/廠商</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">宣導專區</a>
+                            <ul>
+                                <li><a href="#">作業規定</a></li>
+                                <li><a href="#">商品安全知識</a></li>
+                                <li><a href="#">影音宣導</a></li>
+                                <li><a href="#">消費者保護簡訊</a></li>
+                                <li><a href="#">訂閱電子報</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- header End -->
+        <!-- main Start -->
+        <div id="center" class="main">
+            <a class="accesskey" href="#aC" id="aC" accesskey="C" title="主要內容區">:::</a>
+            <!-- 影片autoplay loop 自動撥放循環 只有首頁有-->
+            <div class="mp_bg">
+                <!-- <div id="demo-1" data-zs-src='["images/banner_01.jpg", "images/banner_02.jpg"]' data-zs-overlay="dots"> -->
+                <!--  <div class="demo-inner-content">
+                </div> -->
+            </div>
+        </div>
+        <!-- 主視覺區塊 -->
+        <section class="section mp_banner">
+            <div class="container">
+                <div class="slogan">
+                    <div class="box"></div>
+                    <h2>SAFETY<br> FIRST</h2>
+                    <small>安全生活  幸福享受</small>
+                </div>
+            </div>
+        </section>
+        <!-- quicklink -->
+        <section class="section quick_link">
+            <div class="container">
+                <h2>快捷服務</h2>
+                <ul>
+                    <li><a href="#">商品事故通報</a></li>
+                    <li><a href="#">商品召回訊息</a></li>
+                    <li><a href="#">國外商品瑕疵訊息</a></li>
+                    <li><a href="#">瑕疵除濕機查詢</a></li>
+                    <li><a href="#">市售商品抽測結果</a></li>
+                    <li><a href="#">歷年違規商品</a></li>
+                </ul>
+                <a href="#" class="gotonext" title="前往內容區"></a>
+            </div>
+        </section>
+        <!-- banner輪播 -->
+        <section class="section slider">
+            <div class="container">
+                <div class="singleSlider">
+                    <div class="img-container">
+                        <a href="#" title="">
+                            <span class="caption">圖說1</span>
+                            <img src="images/mp_slider_01.jpg" alt="" class="cover">
+                        </a>
+                    </div>
+                    <div class="img-container">
+                        <a href="#" title="">
+                            <span class="caption">圖說1</span>
+                            <img src="https://assets.imgix.net/unsplash/umbrella.jpg?w=1200&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="" class="cover">
+                        </a>
+                    </div>
+                    <div class="img-container">
+                        <a href="#" title="">
+                            <span class="caption">圖說1</span>
+                            <img src="https://assets.imgix.net/unsplash/citystreet.jpg?w=1200&h=480&fit=crop&auto=format%2Cenhance&usm=20" alt="" class="cover">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 最新消息 /  商品召回資訊-->
+        <section class="section info">
+            <div class="container">
+                <div class="news">
+                    <h2>最新消息</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>經濟部標準檢驗局要求臺灣「IKEA」與美國公司同步實施「Malm」抽屜櫃之召回及矯正措施
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>經濟部標準檢驗局公布市售「錄音筆」檢測結果
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>經濟部標準檢驗局與財團法人中華民國消費者文教基金會合作，針對市售「LED
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>經濟部標準檢驗局制定家用梯具國家標準，以保障消費者使用安全
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>美國消費品安全委員會代理主席Ann Marie Buerkle訪臺
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">閱讀更多
+                    </a>
+                </div>
+                <div class="recall">
+                    <h2>商品召回資訊</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>美國消費品安全委員會代理主席Ann Marie Buerkle訪臺
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>小玩童國際有限公司「床邊護欄」商品召回訊息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>翔盛國際貿易股份有限公司「折合大床欄」商品召回訊息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>鴻銘國際有限公司「嬰幼兒安全護欄」商品召回訊息
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <time>2018-01-01</time>女都企業有限公司「兒童床邊護欄」商品召回訊息
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="#" class="more">閱讀更多
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- 大靜態banner -->
+        <section class="section static_banner">
+            <h2>為自己的消費權益把關!!</h2>
+            <div class="container">
+                <div class="left_block">
+                    <h3>購買商品時..</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <img src="images/btn_buy_01.png" alt="">
+                            <h4>商品檢驗資訊查詢</h4>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                            <img src="images/btn_buy_02.png" alt="">
+                            <h4>驗證登錄證書查詢</h4>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right_block">
+                    <h3>不幸發生事故時..</h3>
+                    <ul>
+                        <li>
+                            <a href="#">
+                            <img src="images/btn_accident_01.png" alt="">
+                            <h4>商品事故線上通報</h4>
+                        </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- 業務統計 -->
+        <section class="section chart">
+            <div class="container">
+                <h2>統計資訊</h2>
+                <div class="chart_menu">
+                    <ul>
+                        <li><a href="#"><span>總局</span>106年度中國大陸進口不安全商品統計</a></li>
+                        <li><a href="#"><span>本局</span>105年度兩岸商品通報及協處
+                    案件統計</a></li>
+                        <li><a href="#"><span>本局</span>105年度違反商品檢驗規定
+                    商品及廠商統計</a></li>
+                    </ul>
+                </div>
+                <!-- chart部分目前使用https://www.highcharts.com/demo/column-parsed/grid-light -->
+                <!-- script在最底線，工程師自行決定是否換過 -->
+                <div class="chart_block">
+                    <div id="container"></div>
+                </div>
+                <a href="#" class="more">閱讀更多</a>
+            </div>
+        </section>
+        <!-- 懶人包/玩具安全知多少 -->
+        <section class="section col-2">
+            <div class="container">
+                <div class="col video">
+                    <h3>影音專區</h3>
+                    <div class="video_pic">
+                        <div class="imgOuter">
+                            <iframe width="100%" src="https://www.youtube.com/embed/cdn9sKExHP0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div class="imgOuter">
+                            <iframe width="100%" src="https://www.youtube.com/embed/wvJuaoBAnKc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <div class="imgOuter">
+                            <iframe width="100%" src="https://www.youtube.com/embed/CpssDBNddgY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <a href="#" class="more">更多影音</a>
+                </div>
+                <div class="col lazy">
+                    <h3>懶人包</h3>
+                    <div class="lazy_pic">
+                        <div class="imgOuter">
+                            <a href="#"> <img src="https://assets.imgix.net/unsplash/mountains.jpg?w=800&h=700&fit=crop&auto=format%2Cenhance&usm=20" alt="" class="cover"><span class="caption">行動電源安全知多少？ </span></a>
+                        </div>
+                        <div class="imgOuter">
+                            <a href="#">
+                            <img src="https://assets.imgix.net/unsplash/raspberries.jpg?w=800&h=700&fit=crop&auto=format%2Cenhance&usm=20" alt="" class="cover">
+                            <span class="caption">
+                                圖說1
+                            </span>
+                        </a>
+                        </div>
+                        <div class="imgOuter">
+                            <a href="#">
+                            <img src="https://assets.imgix.net/unsplash/goldengate.jpg?w=800&h=600&fit=crop&auto=format%2Cenhance&usm=20" alt="" class="cover">
+                            <span class="caption">
+                                圖說2
+                            </span>
+                        </a>
+                        </div>
+                    </div>
+                    <a href="#" class="more">更多懶人包</a>
+                </div>
+            </div>
+        </section>
+        <!-- 廣告banner輪播 -->
+        <!-- <section class="section ad">
+                <div class="container">
+                    <div class="adSlider">
+                        <div class="img-container">
+                            <a href="#">
+                            <img src="images/ad_banner_01.jpg" alt="廣告輪播" class="contain">
+                        </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#">
+                            <img src="images/ad_banner_02.jpg" alt="廣告輪播" class="contain">
+                        </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#">
+                            <img src="images/ad_banner_03.jpg" alt="廣告輪播" class="contain">
+                        </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#">
+                            <img src="images/ad_banner_04.gif" alt="廣告輪播" class="contain">
+                        </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#">
+                            <img src="images/ad_banner_05.jpg" alt="廣告輪播" class="contain">
+                        </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#">
+                            <img src="images/ad_banner_03.jpg" alt="廣告輪播" class="contain">
+                        </a>
+                        </div>
+                        <div class="img-container">
+                            <a href="#">
+                            <img src="images/ad_banner_05.jpg" alt="廣告輪播" class="contain">
+                        </a>
+                        </div>
+                    </div>
+                    <a href="#" class="more">更多連結</a>
+                </div>
+            </section> -->
+    </div>
+    <!-- footer -->
+    <footer>
+        <div class="container">
+            <a class="accesskey" href="#aF" id="aF" accesskey="F" title="頁尾區">:::</a>
+            <!-- fatfooter Start -->
+            <section class="fatfooter">
+                <div class="container">
+                    <button type="button" name="收合" class="btn btn-fatfooter">收合</button>
+                    <nav>
+                        <ul>
+                            <li><a href="#">訊息專區</a>
+                                <ul>
+                                    <li><a href="#">最新消息</a></li>
+                                    <li><a href="#">商品召回訊息</a></li>
+                                    <li><a href="#">國外商品瑕疵訊息</a></li>
+                                    <li><a href="#">市售商品抽測結果</a></li>
+                                    <li><a href="#">不合格進口產品</a></li>
+                                    <li><a href="#">相關連結</a></li>
+                                    <li><a href="#">關於我們</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">查詢服務</a>
+                                <ul>
+                                    <li><a href="#">瑕疵除濕機查詢</a></li>
+                                    <li><a href="#">商品檢驗資訊查詢</a></li>
+                                    <li><a href="#">驗證登錄證書查詢</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">線上服務</a>
+                                <ul>
+                                    <li><a href="#">商品事故通報</a></li>
+                                    <li><a href="#">政府資料開放</a></li>
+                                    <li><a href="#">常見問答</a></li>
+                                    <li><a href="#">意見信箱</a></li>
+                                    <li><a href="#">問卷調查</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">統計彙總</a>
+                                <ul>
+                                    <li><a href="#">中國大陸不安全商品</a></li>
+                                    <li><a href="#">歷年違規商品/廠商</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">宣導專區</a>
+                                <ul>
+                                    <li><a href="#">作業規定</a></li>
+                                    <li><a href="#">商品安全知識</a></li>
+                                    <li><a href="#">影音宣導</a></li>
+                                    <li><a href="#">消費者保護簡訊</a></li>
+                                    <li><a href="#">訂閱電子報</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <div class="footer_logo">
+                <img src="images/footer_logo.png" alt="" class="img-responsive">
+                </div>
+                <div class="footer_info">
+                    <ul class="footer_link">
+                        <li><a href="#">聯絡電話</a></li>
+                        <li><a href="#">隱私權政策</a></li>
+                        <li><a href="#">資訊安全政策</a></li>
+                        <li><a href="#">交通資訊</a></li>
+                    </ul>
+                    <p> 聯絡地址：100 臺北市濟南路一段四號 <br> 傳真：02-23932324 <br> 本網站支援IE與Firefox,最佳瀏覽解析度建議使用1024x768 <br>
+                    </p>
+                    <span class="update">更新日期:<em>2018/01/01</em></span>
+                    <span class="counter">累計瀏覽人次:<em>46476653</em></span>
+                </div>
+                <div class="footer_icon">
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                        <img src="images/basic/accessibility.jpg" alt="">
+                    </a>
+                    <a target="_blank" href="javascript:;" title="另開視窗">
+                        <img src="images/basic/egov.png" alt="">
+                    </a>
+                </div>
+            </div>
+    </footer>
+    </div>
+    <a href="javascript:;" class="scrollToTop" title="回頁首">回頁首</a>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="vendor/jquery.easing.min.js"></script>
+    <!-- slick -->
+    <script src="vendor/slick/slick.min.js"></script>
+    <!-- chart -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script>
+    $(function() {
+        Highcharts.chart('container', {
+            chart: {
+                type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45
+                }
+            },
+            title: {
+                text: ''
+            },
+            subtitle: {
+                text: '統計資訊'
+            },
+            plotOptions: {
+                pie: {
+                    innerSize: 100,
+                    depth: 45
+                }
+            },
+            series: [{
+                name: 'Delivered amount',
+                data: [
+                    ['兒童玩具', 82],
+                    ['成人玩具', 13],
+                    ['XX玩具', 52],
+                    ['XX玩具', 12],
+                    ['XX玩具', 32],
+                    ['XX玩具', 13],
+                    ['其他玩具', 5]
+                ]
+            }]
+        });
+    });
+    </script>
+    <script src="js/hyui.js"></script>
+    <script src="js/customize.js"></script>
+</body>
+
+</html>

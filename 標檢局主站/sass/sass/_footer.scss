@@ -1,0 +1,113 @@
+footer {
+    .accesskey {
+        color: #CCC;
+    }
+    @include box-sizing(border-box);
+    @include clearfix;
+    text-align: left;
+    font-size: 0.813em;
+    background:#122d39;
+    padding-top: 1em;
+    color:#FFF;
+    .container {
+        @include gutter();
+        >div {
+            padding-bottom: 1em;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: lighten($lightColor, 15);
+        &:hover,
+        &:focus {
+            color: lighten($lightColor, 25);
+        }
+    } // .footer_logo {
+    //     @include make-xs-column(8);
+    //     @include make-sm-column(3);
+    //     @include make-md-column(3);
+    //     @include make-lg-column(3);
+    //     @include gutter();
+    // }
+    .footer_info {
+        @include make-xs-column(12);
+        @include make-sm-column(8);
+        @include make-md-column(8);
+        @include make-lg-column(8);
+        @include gutter();
+    }
+    .footer_icon {
+        @include make-xs-column(12);
+        @include make-sm-column(4);
+        @include make-md-column(4);
+        @include make-lg-column(4);
+        @include gutter();
+    } // 版權連結
+    .footer_link {
+        @include li-reset();
+        @include clearfix();
+        li {
+            float: left;
+            display: block;
+            margin: 0px 10px 5px 0px;
+            a {
+                display: block;
+                padding: .5em 1em;
+                background: RGBA(0, 0, 0, .1);
+                color: #FFF;
+                @include border-radius(3px);
+                @include transition(all, .3s, ease-out);
+                &:hover,
+                &:focus {
+                    background: RGBA(0, 0, 0, .7);
+                }
+                @include screen('mobile') {
+                    background: $lightColor;
+                    &:hover,&:focus {
+                        background: darken($lightColor,10);
+                    }
+                }
+            }
+        }
+    }
+    p {
+        line-height: 1.65em;
+    }
+    .update,
+    .counter {
+        display: inline-block;
+        margin-right: 5px;
+        em {
+            font-style: normal;
+            color: $color-yellow;
+            padding: 0 .5em;
+        }
+    }
+    .footer_icon {
+        a {
+            display: inline-block;
+            vertical-align: top;
+            margin-right: 10px;
+            position:relative;
+             &:focus {
+                &:before {
+                    width: 100%;
+                    height: 100%;
+                    content: "";
+                    position: absolute;
+                    z-index: 9;
+                    outline: none;
+                    top: 0;
+                    left: 0;
+                    box-shadow: 0 0px 0px 2px $color-yellow inset;
+                }
+            }
+        }
+        img {
+            max-width: 120px;
+        }
+        span {
+            display: block;
+        }
+    }
+}
