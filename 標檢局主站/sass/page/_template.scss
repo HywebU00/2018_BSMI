@@ -249,6 +249,12 @@ body {
             float: right;
         }
     }
+    &.large_size {
+        font-size: 1.188em;
+    }
+    &.small_size {
+        font-size: 0.938em;
+    }
 }
 .cp,
 .lp,
