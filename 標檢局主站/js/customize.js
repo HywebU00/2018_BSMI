@@ -67,6 +67,7 @@ $(function() {
                 $('.innerpage').removeClass('large_size small_size');
                 $('.font_size').find('.medium').addClass('active');
                 e.preventDefault();
+                
             }
         }
     };
