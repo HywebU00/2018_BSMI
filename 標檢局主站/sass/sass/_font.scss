@@ -3,7 +3,6 @@
     font-weight: $WEIGHT;
     color: $color-word;
 }
-
 @mixin aSetting($COLOR:$aColor, $NOLINE:none) {
     color: $COLOR;
     text-decoration: $NOLINE;
@@ -16,7 +15,7 @@
 body {
     @include fontSetting(1em);
     line-height: 1.45em;
-    font-family:$font-family;
+    font-family: $font-family;
     -webkit-text-size-adjust: none;
     color: #222;
 }
@@ -26,7 +25,7 @@ a {
 // 字級
 .font_size {
     display: flex;
-    flex:0 1 12.5em;
+    flex: 0 1 12.5em;
     padding: .3em;
     justify-content: flex-end;
     span {
@@ -35,12 +34,12 @@ a {
         padding-top: .3em;
     }
     ul {
-       @include li-reset;
-       display: flex;
-       flex: 0 0 6em;
-       li {
+        @include li-reset;
+        display: flex;
+        flex: 0 0 6em;
+        li {
             font-size: 1em;
-            flex:0 0 auto;
+            flex: 0 0 auto;
             margin: 2px;
             align-items: center;
             a {
@@ -64,8 +63,12 @@ a {
                         color: #FFF;
                     }
                 }
-                &.small { font-size: .938em; }
-                &.large { font-size: 1.125em; }
+                &.small {
+                    font-size: .938em;
+                }
+                &.large {
+                    font-size: 1.125em;
+                }
             }
         }
     }

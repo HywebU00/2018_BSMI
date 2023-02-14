@@ -10,6 +10,11 @@ $function_color:#666;
     margin-right: .2em;
     display: inline-block;
 }
+.function_panel {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: .5em;
+}
 .function {
     margin: 0px;
     overflow: hidden;
