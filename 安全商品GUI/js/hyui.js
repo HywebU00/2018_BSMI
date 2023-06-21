@@ -52,7 +52,6 @@ $(function () {
     if (i.outerWidth() < 992 && mobileCount === 0) {
       mobileCount += 1;
       pcCount = 0;
-      console.log('a');
       mobile();
     } else if (i.outerWidth() >= 992 && pcCount === 0) {
       pcCount += 1;
