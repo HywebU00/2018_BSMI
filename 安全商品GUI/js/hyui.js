@@ -42,6 +42,8 @@ $(function () {
 
   let mobileCount = 0;
   let pcCount = 0;
+  let search_mode = false;
+  let _window = $(window);
   $(window).on('scroll', function () {
     $('.m_search').hide();
     pcCount = 0;
@@ -50,29 +52,36 @@ $(function () {
   $(window).on('load resize', function (e) {
     $('.m_search').hide();
     if (i.outerWidth() < 992 && mobileCount === 0) {
-      mobileCount += 1;
+      mobileCount++;
       pcCount = 0;
       mobile();
     } else if (i.outerWidth() >= 992 && pcCount === 0) {
-      pcCount += 1;
+      pcCount++;
       mobileCount = 0;
       pc();
     }
-    $('.searchCtrl')
+    // 行動版查詢
+    var _searchCtrl = $('.searchCtrl');
+    $('.m_search').hide();
+    _searchCtrl.off().on('click', function (e) {
+      if (!search_mode) {
+        $('.m_search').stop(true, false).slideDown('400', 'easeOutQuint');
+        _window.off('resize');
+        $('.m_search').find('input[type="text"]').focus();
+        search_mode = true;
+      } else {
+        $('.m_search').hide();
+        search_mode = false;
+      }
+    });
+    // 如果點在外面
+    $('.main')
       .off()
-      .on('click', function (e) {
-        if (i.outerWidth() < 992) {
-          $('.m_search').stop().slideToggle('400', 'easeOutQuint');
-        }
+      .on('click touchend', function (e) {
+        $('.m_search').hide();
+        search_mode = false;
       });
   });
-  // function m() {
-  //   if (i.outerWidth() < 992) {
-  //     mobile();
-  //   } else {
-  //     pc();
-  //   }
-  // }
   function mobile() {
     !1,
       o.hide(),
